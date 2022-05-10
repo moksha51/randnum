@@ -23,8 +23,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          push: true
-          tags: e0008064/randnum:${{ github.ref_name }} #need to change this to take current tag 
+          push: true    
+          tags: moksha51/randnum:${{ github.ref_name }} #need to change this to take current tag 
 
       #https://github.com/marketplace/actions/slack-send
       -

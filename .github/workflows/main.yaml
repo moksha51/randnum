@@ -47,8 +47,8 @@ jobs:
               ]
             }
         env:
-          Image_Name: ${{ secrets.DOCKER_IMAGE_NAME }}:${{ github.ref_name }} 
-          Image_URL: ${{ secrets.DOCKER_IMAGE_URL }}
+          Image_Name: moksha51/randnum:${{ github.ref_name }} 
+          Image_URL: https://hub.docker.com/repository/docker/moksha51/randnum
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
           Name: TAN XINGJIE
